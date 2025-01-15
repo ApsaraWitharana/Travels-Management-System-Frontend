@@ -1,6 +1,6 @@
 const Layout =()=>{
     return (
-        <div>Header</div>
+        <div>Layout</div>
     )
 }
 export default Layout;
