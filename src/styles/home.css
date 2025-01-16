@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.hero__subtitle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    text-align: right;
+    margin-right: 50%;
+}
+.hero__subtitle img{
+    width: 2.3rem;
+    height: 2.3rem;
+
+}
+.hero__content {
+    font-size:1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: var(--heading-color);
+    margin-left: 50px;
+    margin-right: 50%;
+}
+.hero__content h1 .highlight{
+    color: var(--secondary-color);
+
+}
+
