@@ -1,11 +1,11 @@
 
 import './App.css'
-
+import Layout from "./components/layout/Layout.tsx";
 function App() {
 
   return (
     <>
-     <h1>Hello world</h1>
+     <Layout/>
     </>
   )
 }

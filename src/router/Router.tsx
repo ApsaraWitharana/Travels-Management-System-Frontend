@@ -7,7 +7,7 @@ import Login from "../pages/Login.tsx";
 import Register from "../pages/Register.tsx";
 import SearchResultList from "../pages/SearchResultList.tsx";
 
-const Routers = () =>{
+const Routers = () => {
     return(
         <Routes>
            <Route path="/" element={<Navigate to= '/home'/>}/>
@@ -17,9 +17,6 @@ const Routers = () =>{
             <Route path= "/login" element={<Login/>}/>
             <Route path= "/register" element={<Register/>}/>
             <Route path= "/tours/search" element={<SearchResultList/>}/>
-
-
-
         </Routes>
     )
 }
