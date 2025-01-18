@@ -51,7 +51,21 @@
     border: 1px solid var(--secondary-color);
     object-fit: cover;
 
+
 }
+.hero__img-box img{
+    padding-top: 2rem;
+}
+.hero__media img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.hero__media video:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
 .hero {
     display: flex;
     justify-content: space-between;
@@ -67,6 +81,7 @@
 
 .hero__content {
     flex: 1;
+    padding-top:3.5rem ;
 }
 
 .hero__media {
@@ -82,3 +97,4 @@
     border-radius: 10px;
     object-fit: cover;
 }
+
