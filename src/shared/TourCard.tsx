@@ -2,6 +2,9 @@ import 'react';
 import {Card,CardBody} from "reactstrap";
 import {Link} from "react-router-dom";
 import './tour-card.css';
+import location from  '../assets/icon/icons8-location-24 (1).png';
+// import star from  '../assets/icon/icons8-star-30.png';
+
 const TourCard = ({tour}:any)=>{
 
     const {id,title,photo,city,price,featured,avgRating,reviews} = tour;
@@ -16,12 +19,11 @@ const TourCard = ({tour}:any)=>{
             <CardBody>
                 <div className="card__top d-flex flex-column align-items-center justify-content-between mb-3">
                     <span className='tour__location d-flex align-items-center gap-1'>
-                      <i className="ri-map-pin-line"></i>{city}
+                      <img src={location}/>{city}
+                        <span className='tour__rating d-flex align-items-center gap-1 ml-14 '>4.5 {avgRating}<span>({reviews.length})</span>
                     </span>
-                    {/*<span className='tour__rating d-flex align-items-center'>*/}
-                    {/*  <i className="ri-star-fill"></i> {avgRating}*/}
-                    {/*    <span>({reviews.length})</span>*/}
-                    {/*</span>*/}
+                    </span>
+
                 </div>
                 <h5 className="tour__title">
                     <Link to={`/tours/${id}`}>{title}</Link>
