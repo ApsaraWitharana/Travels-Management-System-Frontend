@@ -112,3 +112,9 @@
     font-weight: 500;
     margin-left: 3rem;
 }
+
+/*//=======================title css==============*/
+.featured__tour-title{
+    font-size: 1.8rem;
+    font-weight: 500;
+}

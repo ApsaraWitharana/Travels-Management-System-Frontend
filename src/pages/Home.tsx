@@ -6,8 +6,9 @@ import heroVideo from "../assets/images/hero-video.mp4";
 import worldImg from "../assets/images/world.png";
 import Subtitle from "../shared/Subtitle.tsx";
 import SearchBar from "../shared/SearchBar.tsx";
-import {Col, Row} from "reactstrap";
+import {Col, Container, Row} from "reactstrap";
 import ServiceList from "../services/ServiceList.tsx";
+import FeaturedTourList from "../components/Featured-tours/FeaturedTourList.tsx";
 const Home = () => {
     return (
         <>
@@ -54,6 +55,20 @@ const Home = () => {
                     </Row>
                 </div>
             </section>
+            {/*{============================== featured tour section start=====================}*/}
+           <section>
+               <Container>
+                   <Row className='ml-14'>
+                       <Col lg='12' className='mb-5'>
+                           <Subtitle subtitle={"What we serve?"}/>
+                           <h2 className='featured__tour-title'>Our featured tours</h2>
+                       </Col>
+                       <FeaturedTourList/>
+                   </Row>
+               </Container>
+           </section>
+            {/*{============================== featured tour section end=====================}*/}
+
 
         </>
     );
