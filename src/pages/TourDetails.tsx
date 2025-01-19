@@ -1,6 +1,6 @@
 import 'react';
 
 const TourDetails = () => {
-    return <div>TourDetails</div>;
+    return <>TourDetails</>;
 }
 export default TourDetails;

@@ -6,6 +6,8 @@ import heroVideo from "../assets/images/hero-video.mp4";
 import worldImg from "../assets/images/world.png";
 import Subtitle from "../shared/Subtitle.tsx";
 import SearchBar from "../shared/SearchBar.tsx";
+import {Col, Row} from "reactstrap";
+import ServiceList from "../services/ServiceList.tsx";
 const Home = () => {
     return (
         <>
@@ -41,6 +43,18 @@ const Home = () => {
             <div className="d-flex justify-content-center ">
                 <SearchBar />
             </div>
+            <section>
+                <div className="d-flex justify-content-center">
+                    <Row className='mt-0'>
+                        <Col lg='3'>
+                            <h5 className="services__subtitle">What we serve</h5>
+                            <h2 className='services__title mt-0'>We offer our best services</h2>
+                        </Col>
+                        <ServiceList/>
+                    </Row>
+                </div>
+            </section>
+
         </>
     );
 };

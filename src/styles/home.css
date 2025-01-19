@@ -98,3 +98,17 @@
     object-fit: cover;
 }
 
+.services__subtitle {
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #ee6e6e;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    font-family: var(--subtitle-font-name);
+
+}
+.services__title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-left: 3rem;
+}

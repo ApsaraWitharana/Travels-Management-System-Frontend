@@ -1,7 +1,7 @@
 import 'react';
 
 const SearchResultList = () => {
-    return <div>SearchResultList</div>;
+    return <>SearchResultList</>;
 
 }
 export default SearchResultList;
