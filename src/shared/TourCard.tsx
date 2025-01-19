@@ -7,7 +7,13 @@ import location from  '../assets/icon/icons8-location-24 (1).png';
 
 const TourCard = ({tour}:any)=>{
 
-    const {id,title,photo,city,price,featured,avgRating,reviews} = tour;
+    const {id,title,photo,city,price,featured,reviews,rating} = tour;
+    const totalRating = reviews?.reduce((acc,item)=> acc+item.rating,0);
+    const avgRating = totalRating === 0
+            ? "": totalRating ===1
+            ?totalRating:totalRating
+            /reviews?.length;
+
     return (
         <div className="tour__card">
         <Card>
@@ -20,7 +26,9 @@ const TourCard = ({tour}:any)=>{
                 <div className="card__top d-flex flex-column align-items-center justify-content-between mb-3">
                     <span className='tour__location d-flex align-items-center gap-1'>
                       <img src={location}/>{city}
-                        <span className='tour__rating d-flex align-items-center gap-1 ml-14 '>4.5 {avgRating}<span>({reviews.length})</span>
+                        {/*<i></i>{avgRating === 0? null:avgRating}*/}
+                        {/*{totalRating === 0? 'Not rated': <span>({reviews.length})</span>}*/}
+                        <span className='tour__rating d-flex align-items-center gap-1 ml-14 '>4.6 {avgRating}<span>({reviews.length})</span>
                     </span>
                     </span>
 

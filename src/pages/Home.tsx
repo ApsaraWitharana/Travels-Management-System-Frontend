@@ -4,6 +4,7 @@ import heroimg from "../assets/images/heroimg.png";
 import heroimg2 from "../assets/images/heroimg2.png";
 import heroVideo from "../assets/images/hero-video.mp4";
 import worldImg from "../assets/images/world.png";
+import experienceImg from "../assets/images/experience.png";
 import Subtitle from "../shared/Subtitle.tsx";
 import SearchBar from "../shared/SearchBar.tsx";
 import {Col, Container, Row} from "reactstrap";
@@ -67,8 +68,46 @@ const Home = () => {
                    </Row>
                </Container>
            </section>
-            {/*{============================== featured tour section end=====================}*/}
+            {/*{============================== featured tour section end =====================}*/}
+            {/*{============================== experience section start =====================}*/}
+            <section>
+                <Container>
+                    <Row className='ml-14 mt-0'>
+                        <Col lg='6' className='mb-5 mt-0'>
+                            <div className="experience__content">
+                                <Subtitle subtitle={"Our experience"}/>
+                                <h2>With our experience, <br/> we will serve you</h2>
+                                <p>
+                                    With years of expertise in providing top-notch services,<br/>
+                                    our team is dedicated to delivering exceptional experiences<br/>
+                                    tailored to your needs.
+                                </p>
+                            </div>
+                            <div className="counter__wrapper d-flex gap-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 ">
+                                <div className="counter__box">
+                                    <span>12k+</span>
+                                    <h6>Successful travel</h6>
+                                </div>
+                                <div className="counter__box">
+                                    <span>2k+</span>
+                                    <h6>Regular clients</h6>
+                                </div>
+                                <div className="counter__box">
+                                    <span>18k+</span>
+                                    <h6>Year end experience</h6>
+                                </div>
+                                    <div className="experience__img mt-0 d-flex mr-0  ml-0 ">
+                                        <img src={experienceImg} alt=''/>
+                                    </div>
+                            </div>
+                        </Col>
+                        <Col lg='6' className='mb-5 mt-0'>
 
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
+            {/*{============================== experience section end =====================}*/}
 
         </>
     );

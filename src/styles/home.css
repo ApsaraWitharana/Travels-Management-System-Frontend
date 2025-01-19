@@ -118,3 +118,51 @@
     font-size: 1.8rem;
     font-weight: 500;
 }
+
+/*//===================experience css ==============//*/
+
+.experience__content {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 0;
+}
+.experience__content p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--text-color);
+    margin-top: 1rem;
+}
+
+.counter__wrapper{
+    margin-top: 1rem;
+}
+.counter__box span{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-color);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 10px 5px 10px 5px;
+    cursor: pointer;
+    margin: 0 2px 2px 10px;
+}
+.counter__box span h6{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.7rem;
+}
+.experience__img{
+    display: flex;
+    margin-top: 0;
+    width: 500px;
+    height: 500px;
+    margin-left: 40%;
+}

@@ -98,8 +98,8 @@
 }
 
 .booking__btn {
-    background-color: #2563eb;
-    color: white;
+    background: var(--secondary-color);
+    color: black;
     font-size: 0.875rem;
     text-transform: uppercase;
     font-weight: 600;
@@ -112,7 +112,7 @@
 }
 
 .booking__btn:hover {
-    background-color: #1d4ed8;
+    background-color: #d89951;
 }
 
 .booking__btn a {
