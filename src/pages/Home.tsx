@@ -143,7 +143,7 @@ const Home = () => {
                             <h2 className="testimonial__title">What our fans say about us</h2>
                         </Col>
                         <Col lg="12" >
-                            <Testimonials/>
+                       <Testimonials/>
                         </Col>
                     </Row>
                 </Container>
