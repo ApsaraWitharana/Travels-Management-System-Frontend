@@ -160,9 +160,33 @@
     margin-top: 0.7rem;
 }
 .experience__img{
-    display: flex;
     margin-top: 0;
-    width: 500px;
-    height: 500px;
-    margin-left: 40%;
+    width: 400px;
+    height: 400px;
+    margin-left: 60%;
+    justify-content: start;
+    align-items: start;
+    object-fit: cover;
+    position: absolute;
+}
+
+/*//==================gallery css==================*/
+
+.gallery__title{
+    margin-top: 0;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 2px;
+    margin-right: 20px;
+}
+.masonry__img{
+    margin-top: 30px;
+    transition: 0.3s;
+    width: 50%;
+    height: 50%;
+    margin-right: 30px;
+
+}
+.masonry__img:hover{
+    transform: scale(1.1);
 }
