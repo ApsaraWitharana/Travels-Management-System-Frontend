@@ -11,6 +11,7 @@ import {Col, Container, Row} from "reactstrap";
 import ServiceList from "../services/ServiceList.tsx";
 import FeaturedTourList from "../components/Featured-tours/FeaturedTourList.tsx";
 import MasonryImagesGallery from "../components/image-gallery/MasonryImagesGallery.tsx";
+import Testimonials from "../components/testimonial/Testimonials.tsx";
 const Home = () => {
     return (
         <>
@@ -130,8 +131,24 @@ const Home = () => {
                 </Container>
             </section>
 
-
             {/*{============================== gallery section end =====================}*/}
+
+            {/*{============================== testimonial section start =====================}*/}
+            <section>
+                <Container>
+                    <Row className="ml-10 mr-10 mt-0  ">
+                        <Col lg="12" className="mb-5 mt-5">
+                          <Subtitle subtitle={"fans Love"}/>
+                            <h2 className="testimonial__title">What our fans say about us</h2>
+                        </Col>
+                        <Col lg="12" >
+                            <Testimonials/>
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
+            {/*{============================== testimonial section end =====================}*/}
+
 
 
         </>
