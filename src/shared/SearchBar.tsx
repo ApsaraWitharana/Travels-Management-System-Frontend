@@ -1,5 +1,5 @@
 import './SearchBar.css';
-import search from "../assets/icon/search.png";
+import search from "../../public/icon/search.png";
 import { useRef } from "react";
 
 const SearchBar = () => {

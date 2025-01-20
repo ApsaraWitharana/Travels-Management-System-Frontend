@@ -12,6 +12,7 @@ import ServiceList from "../services/ServiceList.tsx";
 import FeaturedTourList from "../components/Featured-tours/FeaturedTourList.tsx";
 import MasonryImagesGallery from "../components/image-gallery/MasonryImagesGallery.tsx";
 import Testimonials from "../components/testimonial/Testimonials.tsx";
+import Newsletter from "../shared/Newsletter.tsx";
 const Home = () => {
     return (
         <>
@@ -148,9 +149,7 @@ const Home = () => {
                 </Container>
             </section>
             {/*{============================== testimonial section end =====================}*/}
-
-
-
+            <Newsletter/>
         </>
     );
 };

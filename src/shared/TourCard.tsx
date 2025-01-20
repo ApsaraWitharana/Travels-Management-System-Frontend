@@ -2,7 +2,7 @@ import 'react';
 import {Card,CardBody} from "reactstrap";
 import {Link} from "react-router-dom";
 import './tour-card.css';
-import location from  '../assets/icon/icons8-location-24 (1).png';
+import location from '../../public/icon/icons8-location-24 (1).png';
 // import star from  '../assets/icon/icons8-star-30.png';
 
 const TourCard = ({tour}:any)=>{
