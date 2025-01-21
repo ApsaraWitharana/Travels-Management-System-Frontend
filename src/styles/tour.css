@@ -1,0 +1,23 @@
+.pagination-col{
+    margin-left: 40rem;
+
+}
+.pagination{
+    padding: 10px;
+    gap: 2rem;
+}
+.pagination span{
+    width: 2rem;
+    height: 2rem;
+    padding: 5px;
+    border-radius: 50px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    line-height: 2rem;
+    border: 1px solid var(--secondary-color);
+    color: var(--heading-color);
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 700;
+}
