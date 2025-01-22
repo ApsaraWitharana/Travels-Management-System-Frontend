@@ -45,7 +45,7 @@
 
 .booking__info-form input:focus {
     outline: none;
-    border-color: #007bff;
+    border-color: #cc6e10;
     box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
 }
 
@@ -58,7 +58,7 @@
 .booking__info-form button {
     padding: 10px;
     font-size: 16px;
-    background-color: #007bff;
+    background-color: #d89951;
     color: white;
     border: none;
     border-radius: 5px;
@@ -67,5 +67,13 @@
 }
 
 .booking__info-form button:hover {
-    background-color: #0056b3;
+    background-color: #cc6e10;
+}
+.booking__bottom h5{
+    font-size: 16px;
+    font-weight: 600;
+}
+.booking__bottom button:hover {
+    background-color: #d89951;
+    color: black;
 }

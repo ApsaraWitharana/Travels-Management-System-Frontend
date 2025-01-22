@@ -6,6 +6,7 @@ import TourDetails from "../pages/TourDetails.tsx";
 import Login from "../pages/Login.tsx";
 import Register from "../pages/Register.tsx";
 import SearchResultList from "../pages/SearchResultList.tsx";
+import ThankYou from "../pages/ThankYou.tsx";
 
 const Routers = () => {
     return(
@@ -16,6 +17,7 @@ const Routers = () => {
             <Route path= "/tours/:id" element={<TourDetails/>}/>
             <Route path= "/login" element={<Login/>}/>
             <Route path= "/register" element={<Register/>}/>
+            <Route path= "/thank-you" element={<ThankYou/>}/>
             <Route path= "/tours/search" element={<SearchResultList/>}/>
         </Routes>
     )
