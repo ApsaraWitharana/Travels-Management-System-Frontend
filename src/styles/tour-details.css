@@ -1,0 +1,125 @@
+/* tour-details.css */
+
+/* General Container Styling */
+.tour__content {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.tour__content img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.tour-info h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.tour-info .d-flex {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.tour-info .text-black {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+}
+
+.tour-info .d-flex img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Extra Details Section */
+.tour__extra-details {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.tour__extra-details span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #777;
+}
+
+.tour__extra-details span:first-child {
+    color: #007bff; /* Highlight for city */
+}
+
+.tour__extra-details span:last-child {
+    color: #28a745; /* Highlight for group size */
+}
+
+/* Address and Location Section */
+.tour-info .address {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Pricing Section */
+.tour__extra-details span:nth-child(2) {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff5733;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .tour__content {
+        padding: 15px;
+    }
+
+    .tour-info h2 {
+        font-size: 24px;
+    }
+
+    .tour__extra-details span {
+        font-size: 12px;
+    }
+}
+.tour-info h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.tour-info .d-flex {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.tour__extra-details {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.tour__extra-details span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #777;
+}
+
+.tour__extra-details span svg {
+    margin-right: 5px;
+}
