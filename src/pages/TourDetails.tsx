@@ -6,6 +6,7 @@ import tourData from '../assets/data/tours';
 import { FaMapMarkerAlt, FaDollarSign, FaUsers } from 'react-icons/fa';
 import avatar from '../assets/images/avatar.jpg';
 import Booking from "../components/booking/Booking.tsx";
+import Newsletter from "../shared/Newsletter.tsx";
 
 const TourDetails = () => {
     const { id } = useParams();
@@ -147,7 +148,9 @@ const TourDetails = () => {
                     </div>
                 </Col>
             </Row>
+         <Newsletter/>
         </Container>
+
     );
 };
 

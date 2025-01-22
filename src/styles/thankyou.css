@@ -1,0 +1,74 @@
+/* Wrapper for the entire ThankYou component */
+.thank__you-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Full height */
+    background-color: #f9f9f9; /* Light background */
+    padding: 20px; /* Ensure spacing on smaller screens */
+}
+
+/* Main ThankYou card */
+.thank__you {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px; /* Limit width for readability */
+    width: 100%; /* Ensure responsiveness */
+}
+
+/* Icon styling */
+.thank__you-icon {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #28a745; /* Green for success */
+}
+
+/* Headline */
+.thank__you h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+/* Subheading */
+.thank__you h3 {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Button styles */
+.thank__you .primary__btn {
+    background-color: #007bff; /* Primary blue */
+    border: none;
+    padding: 12px 20px;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the button */
+.thank__you .primary__btn:hover {
+    background-color: #0056b3;
+}
+
+/* Link inside the button */
+.thank__you-link {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Hover effect for the link (optional, for clarity) */
+.thank__you-link:hover {
+    color: #f9f9f9;
+}
