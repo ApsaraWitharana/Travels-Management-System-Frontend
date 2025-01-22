@@ -34,19 +34,22 @@ const Tours = () => {
                         {tourData?.map((tour) => (
                             <TourCard key={tour.id} tour={tour}/>
                         ))}
-                        <div  className='pagination-col grid mb-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 '>
-                         <div className="pagination">
-                             {[...Array(pageCount).keys()].map((number) => (
-                                 <span  key={number} onClick={()=>setPage(number)} className={page===number ? 'active__page' : ''}>
-                                     {number + 1}
-
-                                 </span>
-                             ))}
-                         </div>
+                        <div className='pagination-col grid mb-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 '>
+                            <div className="pagination">
+                                {[...Array(pageCount).keys()].map((number) => (
+                                    <span
+                                        key={number}
+                                        onClick={() => setPage(number)}
+                                        className={page === number ? 'active__page' : ''}>
+                                      {number + 1}
+                                    </span>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </Container>
             </section>
+            <Newsletter/>
         </>
     );
 };
