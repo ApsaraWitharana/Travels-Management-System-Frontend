@@ -10,7 +10,7 @@
     margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
-    width: 75%;
+    width: 50%;
     height: 25%;
 }
 
@@ -25,7 +25,7 @@
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 75%;
+    width: 50%;
     height: 25%;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -301,4 +301,19 @@
 
 .gap-5 {
     gap: 5px;
+}
+.tour-details-container {
+    display: flex;
+    gap: 10px;
+}
+
+.tour__content {
+    flex: 3; /* Take 3/4 of the available space */
+}
+
+.booking__section {
+    flex: 1; /* Take 1/4 of the available space */
+    background-color: #f8f9fa; /* Optional: Add a background for better visibility */
+    padding: 20px;
+    border-radius: 8px;
 }

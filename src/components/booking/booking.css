@@ -1,0 +1,71 @@
+/* General Booking Styles */
+.booking {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.booking__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.booking__top h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.booking__top .booking__bottom {
+    font-size: 14px;
+    color: #888;
+}
+
+.booking__bottom {
+    margin-top: 20px;
+}
+
+.booking__bottom .booking__info-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input Field Styles */
+.booking__info-form input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.booking__info-form input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+/* Placeholder Text Styling */
+.booking__info-form input::placeholder {
+    color: #aaa;
+}
+
+/* Submit Button Styling */
+.booking__info-form button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.booking__info-form button:hover {
+    background-color: #0056b3;
+}
