@@ -40,7 +40,7 @@ const TourCard = ({tour}:any)=>{
                      <h5>${price} <span>/per person</span></h5>
                     <button className='btn booking__btn rounded-md'>
                         <li className='btn'>
-                            <Link to={`/tours/${id}`}>book now</Link>
+                            <Link to={`/tours/${id}/thank-you`}>book now</Link>
                         </li>
                     </button>
                 </div>

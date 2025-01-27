@@ -1,13 +1,12 @@
 import { Button, Col, Container, Row } from "reactstrap";
 import { Link } from "react-router-dom";
-import Newsletter from "../shared/Newsletter";
 import '../styles/thankyou.css';
 
 const ThankYou = () => {
     return (
-        <div className="thank__you-wrapper mt-10">
+        <div className="thank__you-wrapper">
             <Container>
-                <Row>
+                <Row className="align-items-center justify-content-center  ">
                     <Col lg="12">
                         <div className="thank__you">
                             <span className="thank__you-icon">🎉</span>
@@ -20,7 +19,6 @@ const ThankYou = () => {
                     </Col>
                 </Row>
             </Container>
-            <Newsletter />
         </div>
     );
 };
