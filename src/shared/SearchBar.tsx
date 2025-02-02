@@ -1,26 +1,44 @@
 import './SearchBar.css';
 import search from "../../public/icon/search.png";
 import { useRef } from "react";
+import { BASE_URL } from "../util/config.ts";
+import { useNavigate } from "react-router-dom";
+
 
 const SearchBar = () => {
-    const locationRef = useRef<HTMLInputElement>(null);
-    const distanceRef = useRef<HTMLInputElement>(null);
-    const maxGroupSizeRef = useRef<HTMLInputElement>(null);
+    const locationRef = useRef(null);
+    const distanceRef = useRef(null);
+    const maxGroupSizeRef = useRef(null);
+    const navigate = useNavigate();
 
-    const searchHandler = () => {
+    const searchHandler = async () => {
         const location = locationRef.current?.value.trim();
         const distance = distanceRef.current?.value.trim();
         const maxGroupSize = maxGroupSizeRef.current?.value.trim();
-
         // Validate inputs
         if (!location || !distance || !maxGroupSize) {
             return alert('All fields are required');
         }
 
-        // Perform search logic here
-        console.log("Location:", location);
-        console.log("Distance:", distance);
-        console.log("Max Group Size:", maxGroupSize);
+        try {
+            const res = await fetch(
+                `${BASE_URL}/tours/search/getTourBySearch?city=${location}&distance=${distance}&maxGroupSize=${maxGroupSize}`
+            );
+
+            if (!res.ok) {
+                throw new Error('Something went wrong!');
+            }
+
+            const result = await res.json();
+
+            // Navigate to the search results page
+            navigate(`/tours/search?city=${location}&distance=${distance}&maxGroupSize=${maxGroupSize}`, {
+                state: result.data,
+            });
+        } catch (error) {
+            console.error("Search error:", error);
+            alert('Failed to fetch search results. Please try again.');
+        }
     };
 
     return (
@@ -32,7 +50,7 @@ const SearchBar = () => {
                         <h6 className="text-lg font-bold text-gray-800">Location</h6>
                     </div>
                     <input
-                        className="text-gray-600 w-full border rounded-full"
+                        className="text-gray-600 w-full border rounded-full p-2"
                         type="text"
                         placeholder="Where are you going?"
                         ref={locationRef}
@@ -64,6 +82,7 @@ const SearchBar = () => {
                         ref={maxGroupSizeRef}
                     />
                 </div>
+
                 {/* Search Icon */}
                 <span className="search__icon" onClick={searchHandler}>
                     <img src={search} alt="Search Icon" />
