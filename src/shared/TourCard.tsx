@@ -22,6 +22,7 @@ const TourCard = ({tour}:any)=>{
                 {featured && <span className="featured-badge">Featured</span>}
             </div>
         </Card>
+
             <CardBody>
                 <div className="card__top d-flex flex-column align-items-center justify-content-between mb-3">
                     <span className='tour__location d-flex align-items-center gap-1'>
