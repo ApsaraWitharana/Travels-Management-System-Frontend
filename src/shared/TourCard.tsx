@@ -7,7 +7,7 @@ import location from '../../public/icon/icons8-location-24 (1).png';
 
 const TourCard = ({tour}:any)=>{
 
-    const {id,title,photo,city,price,featured,reviews,rating} = tour;
+    const {_id,title,photo,city,price,featured,reviews,rating} = tour;
     const totalRating = reviews?.reduce((acc,item)=> acc+item.rating,0);
     const avgRating = totalRating === 0
             ? "": totalRating ===1
@@ -34,13 +34,13 @@ const TourCard = ({tour}:any)=>{
 
                 </div>
                 <h5 className="tour__title">
-                    <Link to={`/tours/${id}`}>{title}</Link>
+                    <Link to={`/tours/${_id}`}>{title}</Link>
                 </h5>
                 <div className="card__bottom d-flex flex-column align-items-center justify-content-between mt-3">
                      <h5>${price} <span>/per person</span></h5>
                     <button className='btn booking__btn rounded-md'>
                         <li className='btn'>
-                            <Link to={`/tours/${id}/thank-you`}>book now</Link>
+                            <Link to={`/tours/${_id}/thank-you`}>book now</Link>
                         </li>
                     </button>
                 </div>
