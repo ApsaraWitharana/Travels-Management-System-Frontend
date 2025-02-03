@@ -10,7 +10,6 @@ const SearchResultList = () => {
     const [data] = useState(location.state || []);
     console.log(data);
 
-
     return (
         <>
             <CommonSection title="Tour Search Result" />
@@ -22,7 +21,7 @@ const SearchResultList = () => {
                         ) : (
                             data?.map((tour) => (
                                 <Col lg="4" md="6" sm="12" className="mb-4 d-flex justify-content-center" key={tour._id}>
-                                    <TourCard tour={tour} />
+                                    <TourCard key={tour._id} tour={tour}/>
                                 </Col>
                             ))
                         )}
