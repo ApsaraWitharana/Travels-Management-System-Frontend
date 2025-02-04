@@ -1,12 +1,12 @@
 import  'react';
 import TourCard from "../../shared/TourCard";
-import userFetch from "../../hooks/userFetch.ts";
+import useFetch from "../../hooks/useFetch.ts";
 import {BASE_URL} from "../../util/config.ts";
 
 
 const FeaturedTourList= () => {
 
-    const {data:featuredTours,loading,error} = userFetch(`${BASE_URL}/tours/search/getFeaturedTours`);
+    const {data:featuredTours,loading,error} = useFetch(`${BASE_URL}/tours/search/getFeaturedTours`);
 
    console.log(featuredTours);
 

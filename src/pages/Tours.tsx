@@ -7,7 +7,7 @@ import Newsletter from "../shared/Newsletter.tsx";
 import { Container, Row} from "reactstrap";
 import {useState,useEffect} from "react";
 
-import userFetch from "../hooks/userFetch.ts";
+import useFetch from "../hooks/useFetch.ts";
 import {BASE_URL} from "../util/config.ts";
 
 
@@ -16,8 +16,8 @@ const Tours = () => {
     const [pageCount,setPageCount] = useState(0);
     const [page, setPage] = useState(0);
 
-    const {data:tours,loading,error} = userFetch(`${BASE_URL}/tours?page=${page}`);
-    const {data:tourCount} = userFetch(`${BASE_URL}/tours/search/getTourCount`);
+    const {data:tours,loading,error} = useFetch(`${BASE_URL}/tours?page=${page}`);
+    const {data:tourCount} = useFetch(`${BASE_URL}/tours/search/getTourCount`);
 
 
     useEffect(()=>{

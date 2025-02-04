@@ -1,6 +1,6 @@
 import {useState,useEffect} from "react";
 
-const userFetch=(url)=>{
+const useFetch=(url)=>{
 
   const [data,setData]=useState([]);
   const [error,setError]=useState(null);
@@ -34,4 +34,4 @@ const userFetch=(url)=>{
     };
 };
 
-export default userFetch;
+export default useFetch;
