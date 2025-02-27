@@ -83,11 +83,15 @@ Follow the instructions below to get your local development environment set up.
    ```sh
    https://github.com/ApsaraWitharana/Travels-Management-System-Frontend.git
    ```
-2. Navigate to the project directory:
+2. Backend repository:
+   ```sh
+   https://github.com/ApsaraWitharana/Travels-Management-System-Backend.git
+   ```      
+3. Navigate to the project directory:
    ```sh
    cd tour-management-system-user
    ```
-3. Install dependencies:
+4. Install dependencies:
    ```sh
    npm install
    ```
